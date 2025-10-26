@@ -1,0 +1,1 @@
+const express=require('express');const router=express.Router();const c=require('../controllers/trips');router.get('/',c.list);router.get('/:slug',c.detail);module.exports=router;

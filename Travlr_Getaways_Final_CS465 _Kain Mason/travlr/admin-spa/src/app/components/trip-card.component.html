@@ -1,0 +1,12 @@
+<div class="card h-100">
+  <img *ngIf="trip.image" [src]="trip.image" class="card-img-top" [alt]="trip.name">
+  <div class="card-body d-flex flex-column">
+    <h5 class="card-title">{{ trip.name }}</h5>
+    <p class="card-text text-muted">{{ trip.location }} • {{ trip.duration }} days • ${{ trip.price }}</p>
+    <p class="card-text">{{ trip.summary }}</p>
+    <div class="mt-auto d-flex gap-2">
+      <a class="btn btn-outline-primary btn-sm" [routerLink]="['/edit', trip.slug]">Edit</a>
+      <button class="btn btn-outline-danger btn-sm" (click)="remove()" [disabled]="deleting">Delete</button>
+    </div>
+  </div>
+</div>

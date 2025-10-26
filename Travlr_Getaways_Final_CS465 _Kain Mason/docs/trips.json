@@ -1,0 +1,32 @@
+[
+  {
+    "code": "B0101",
+    "name": "Cancun",
+    "length": "4 nights / 5 days",
+    "start": "2021-02-14T00:00:00Z",
+    "resort": "Emerald Bay, 3-stars",
+    "perPerson": 799.0,
+    "image": "/images/cancun.jpg",
+    "description": "Tropical escape in Cancun with beachfront views."
+  },
+  {
+    "code": "B0103",
+    "name": "Barbados",
+    "length": "5 nights / 6 days",
+    "start": "2021-02-28T00:00:00Z",
+    "resort": "Castaway Cove, 4-stars",
+    "perPerson": 1299.0,
+    "image": "/images/barbados.jpg",
+    "description": "Luxury resort experience with ocean activities."
+  },
+  {
+    "code": "B0701",
+    "name": "Tahiti",
+    "length": "6 nights / 7 days",
+    "start": "2021-03-28T00:00:00Z",
+    "resort": "Hedonist Heaven, 5-stars",
+    "perPerson": 1799.0,
+    "image": "/images/tahiti.jpg",
+    "description": "Overwater bungalows and island luxury in Tahiti."
+  }
+]

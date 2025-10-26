@@ -1,0 +1,24 @@
+<div class="d-flex justify-content-between align-items-center mb-3">
+  <h2>Trips</h2>
+  <a class="btn btn-primary" (click)="refresh()">Refresh</a>
+</div>
+<div class="card mb-3">
+  <div class="card-body">
+    <h5 class="card-title">Add Trip</h5>
+    <div class="row g-2">
+      <div class="col"><input class="form-control" placeholder="slug" [(ngModel)]="newTrip.slug"></div>
+      <div class="col"><input class="form-control" placeholder="name" [(ngModel)]="newTrip.name"></div>
+      <div class="col"><input class="form-control" placeholder="location" [(ngModel)]="newTrip.location"></div>
+      <div class="col"><input type="number" class="form-control" placeholder="duration" [(ngModel)]="newTrip.duration"></div>
+      <div class="col"><input type="number" class="form-control" placeholder="price" [(ngModel)]="newTrip.price"></div>
+      <div class="col-12 col-md"><input class="form-control" placeholder="image url" [(ngModel)]="newTrip.image"></div>
+      <div class="col-12 col-md"><input class="form-control" placeholder="summary" [(ngModel)]="newTrip.summary"></div>
+      <div class="col-12 col-md-auto"><button class="btn btn-success w-100" (click)="add()">Add</button></div>
+    </div>
+  </div>
+</div>
+<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
+  <div class="col" *ngFor="let t of trips">
+    <app-trip-card [trip]="t"></app-trip-card>
+  </div>
+</div>

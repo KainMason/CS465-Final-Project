@@ -1,0 +1,42 @@
+{
+  "info": {
+    "name": "Travlr API Tests",
+    "_postman_id": "travlr-api-collection",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "List Trips",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "http://localhost:3000/api/trips"
+      }
+    },
+    {
+      "name": "Get Trip by Code",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "http://localhost:3000/api/trips/B0101"
+      }
+    },
+    {
+      "name": "Login",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"email\":\"admin@example.com\",\"password\":\"pass\"}"
+        },
+        "url": "http://localhost:3000/api/auth/login"
+      }
+    }
+  ]
+}
